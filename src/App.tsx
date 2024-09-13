@@ -105,7 +105,7 @@ function App() {
                   />
                 </FormControl>
                 <Button type="submit" colorScheme="purple" width="full" isDisabled={isSubmitting}>
-                  Login
+                  Get It
                 </Button>
               </VStack>
             </form>
