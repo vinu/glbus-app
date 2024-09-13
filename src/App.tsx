@@ -32,7 +32,7 @@ function App() {
       }
 
       setIsSubmitting(true)
-      const res = await fetch("http://glb.ticketsimply.com//api/cms_booking_engine.json", {
+      const res = await fetch("https://glb.ticketsimply.com//api/cms_booking_engine.json", {
         "headers": {
           "accept": "*/*",
           "accept-language": "en-US,en;q=0.9,ml;q=0.8",
