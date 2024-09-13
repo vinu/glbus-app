@@ -3,11 +3,21 @@ import { useFormik } from 'formik';
 import { useState } from 'react';
 
 
+export interface PNRDATA {
+  origin: string,
+  destination: string,
+  boarding: string,
+  starting: string,
+  seatNumbers: string,
+  serviceNumber: string
+}
+
+
 function App() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const [pnrData, setPnrData] = useState(null);
+  const [pnrData, setPnrData] = useState<PNRDATA | null>(null);
 
   const formik = useFormik({
     initialValues: {
