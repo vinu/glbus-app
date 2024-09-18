@@ -1,4 +1,4 @@
-import { Box, Button, Flex, FormControl, FormLabel, HStack, Input, Tag, Text, VStack } from '@chakra-ui/react'
+import { Box, Button, Flex, FormControl, FormLabel, Heading, HStack, Input, Tag, Text, VStack } from '@chakra-ui/react'
 import { useFormik } from 'formik';
 import { useState } from 'react';
 
@@ -77,8 +77,10 @@ function App() {
   });
   return (
     <>
+
       <Flex bg="gray.100" justify="center" h="100vh">
         <VStack>
+          <Heading mt={3}>Greenline PNR View</Heading>
           <Box bg="white" p={6} rounded="md" mt={10}>
             <form onSubmit={formik.handleSubmit}>
               <VStack spacing={4} align="flex-start">
