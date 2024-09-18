@@ -37,6 +37,7 @@ jobs:
       run: |
         npm install
         npm run build
+        mv dist _site
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
   
